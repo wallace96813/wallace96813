@@ -1,0 +1,102 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Welcome to ROCK, PAPER, SCISSORS game! \n",
+      " enter your move:(r)ock-1 (p)aper-2 (s)cissors-3  2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "paper versus...\n",
+      "paper\n",
+      "tie\n"
+     ]
+    }
+   ],
+   "source": [
+    "player = int(input(\"Welcome to ROCK, PAPER, SCISSORS game! \\n enter your move:(r)ock-1 (p)aper-2 (s)cissors-3 \"))\n",
+    "import random\n",
+    "computer = random.randint(1,3)\n",
+    "\n",
+    "if player  == computer:\n",
+    "    if player ==1:\n",
+    "        print(\"stone versus...\");\n",
+    "        print(\"stone\");\n",
+    "    elif player ==2:\n",
+    "        print(\"paper versus...\");\n",
+    "        print(\"paper\");\n",
+    "    else:\n",
+    "        print(\"scissors versus...\");\n",
+    "        print(\"scissors\");\n",
+    "    print(\"tie\");\n",
+    "elif player  == 1 and computer ==2:\n",
+    "\n",
+    "    print(\"stone versus... \\n paper\");\n",
+    "    print(\"you lose\");\n",
+    "elif player  == 1 and computer ==3:\n",
+    "\n",
+    "    print(\"stone versus... \\n scissors\");\n",
+    "    print(\"you win\");\n",
+    "elif player  == 2 and computer ==1:\n",
+    "\n",
+    "    print(\"paper versus... \\n rock\");\n",
+    "    print(\"you win\");\n",
+    "elif player  == 2 and computer ==3:\n",
+    "\n",
+    "    print(\"paper versus... \\n scissors\");\n",
+    "    print(\"you lose\");\n",
+    "elif player  == 3 and computer ==1:\n",
+    "    print(\"scissors versus... \\n rock\");\n",
+    "    print(\"you lose\");\n",
+    "elif player  == 3 and computer ==2:\n",
+    "    print(\"scissors versus... \\n  paper\");\n",
+    "    print(\"you win\");"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
